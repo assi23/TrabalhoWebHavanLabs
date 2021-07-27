@@ -1,0 +1,81 @@
+*{
+    border: 0;
+    margin:0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: deepskyblue;
+}
+
+#usuario{
+    height: 50px;
+    width: 10%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+#usuario img{
+    padding: 10px;
+    width: 40px;
+    border-radius: 30px;
+}
+
+#logo{
+    height: 50px;
+    width: 10%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+#logo img{
+    padding: 10px;
+    width: 40px;
+}
+
+#bemVindo{
+    height: 50px;
+    width: 100%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+#bemVindo h1{
+    padding: 10px;
+    font-size:30px;
+    color: #fff;
+}
+
+#barraNavegacao{
+    height: 30px;
+    width: 50%;
+    /* margin:40%; */
+}
+
+#barraNavegacao ul{
+    list-style: none;
+}
+
+#barraNavegacao ul li{
+    display: inline-block;
+    padding: 5px;
+    background: #fff;
+    border: 2px solid darkblue;
+}
+
+#barraNavegacao ul li:hover{
+    border: 2px solid darkblue;
+    background: cyan;
+}
+
+#barraNavegacao ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: darkblue;
+}
