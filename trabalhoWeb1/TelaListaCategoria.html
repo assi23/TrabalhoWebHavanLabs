@@ -4,39 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/listarCat.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Lista de Categorias</title>
 </head>
 <body>
-    <img src="https://s3.amazonaws.com/gupy5/production/companies/541/career/1974/images/2020-08-27_18-13_logo.jpg" alt="" width="100"> <br>
-    <fieldset>
-        <legend>Listagem de Categorias</legend>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Moda</td>
-                    <td>produtos para vestuário.</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Cama/Mesa/Banho</td>
-                    <td>Produtos de cama,mesa e banho.</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Brinquedos</td>
-                    <td>Brinquedos para todas as idades.</td>
-                </tr>
-            </tbody>
-        </table>
-    </fieldset>
-    <a href="TelaMenu.html">Voltar para o Menu</a>                                            <br><br>
+    <header>
+        <div id="usuario">
+            <img src="img/logousuario.png" alt="logo usuário">
+        </div>
+        <div id="logo">
+        <a href="TelaMenu.html"><img src="img/havanLogoSite.jpg" alt="Logo Havan" ></a>
+        </div>
+        <div id="bemVindo">
+            <h1>Bem vindo ao cadastro Havan Labs</h1>
+        </div>
+        <div id="barraNavegacao">
+            <nav>
+                <ul>
+                    <li><a href="TelaCadastroCat.html">Cadastro Categoria</a></li>    
+                    <li><a href="TelaListaCategoria.html">Lista de Categorias</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="cabecalhoCrud">
+            <h2>Listagem de Categorias</h2>
+            <a href="TelaCadastroCat.html">Voltar</a>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Moda</td>
+                        <td>produtos para vestuário.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cama/Mesa/Banho</td>
+                        <td>Produtos de cama,mesa e banho.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Brinquedos</td>
+                        <td>Brinquedos para todas as idades.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer> 
+        <div id="msgFooter">
+            <h4>Todos os direitos reservados <br /> &copy; Havan Labs</h4> 
+        </div>
+        <div id="imgFooter">
+           <img id="logoHLabs" src="img/logo-havan-min.png" alt="Logo Havan Labs" >
+        </div>
+
+
+       
 </body>
 </html>

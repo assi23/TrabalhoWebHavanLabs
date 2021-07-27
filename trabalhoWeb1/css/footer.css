@@ -1,0 +1,25 @@
+footer{
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* background: rgb(5, 150, 199); */
+}
+
+#msgFooter h4{
+    text-align: center;
+    margin-top:60px;
+}
+
+#imgFooter{
+    position: relative;
+    bottom: 40%;
+    left: 96%;
+    height: 50px;
+    width: 10%;
+}
+
+#imgFooter img{
+    width: 40px; 
+}

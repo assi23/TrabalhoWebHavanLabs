@@ -1,81 +1,64 @@
 *{
-    border: 0;
-    margin:0;
+    margin: 0;
     padding: 0;
+    border: 0;
 }
 
-header{
-    display: flex;
-    height: 10%;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background: deepskyblue;
+body{
+    background: rgb(206, 201, 201);
 }
 
-#usuario{
-    height: 50px;
-    width: 10%;
-    margin-left: 1%;
-    margin-bottom: 10px;
-}
-
-#usuario img{
-    padding: 10px;
-    width: 40px;
-    border-radius: 30px;
-}
-
-#logo{
-    height: 50px;
-    width: 10%;
-    margin-left: 1%;
-    margin-bottom: 10px;
-}
-
-#logo img{
-    padding: 10px;
-    width: 40px;
-}
-
-#bemVindo{
-    height: 50px;
-    width: 100%;
-    margin-left: 20%;
-    margin-bottom: 10px;
-}
-
-#bemVindo h1{
-    padding: 10px;
-    font-size:30px;
-    color: #fff;
-}
-
-#barraNavegacao{
-    height: 30px;
+main{
     width: 50%;
-    /* margin:40%; */
+    margin: 10px auto 120px;
+    min-height: 500px;
+    background: white;
+    padding: 30px 25px;
+    box-shadow: 10px 100px 500px 0px black;
+}
+#msgMenu h2{
+    color: blue;
+}
+#msgMenu hr{
+    width: 100%;
+    height: 1px;
+    background: blue;
 }
 
-#barraNavegacao ul{
-    list-style: none;
+#msgMenu p{
+    font-size: 20px;
 }
 
-#barraNavegacao ul li{
+footer{
+    position: fixed;
     display: inline-block;
-    padding: 5px;
-    background: #fff;
-    border: 2px solid darkblue;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
 }
 
-#barraNavegacao ul li:hover{
-    border: 2px solid darkblue;
-    background: cyan;
+footer{
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(5, 150, 199);
 }
 
-#barraNavegacao ul li a{
-    display: block;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: darkblue;
+#msgFooter h4{
+    text-align: center;
+    margin-top:60px;
+}
+
+#imgFooter{
+    position: relative;
+    bottom: 40%;
+    left: 96%;
+    height: 50px;
+    width: 10%;
+}
+
+#imgFooter img{
+    width: 40px; 
 }
