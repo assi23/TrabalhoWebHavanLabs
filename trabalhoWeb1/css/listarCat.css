@@ -3,7 +3,7 @@
     color: blue;
 }
 
-#cabecalhoCrud a{
+#cabecalhoCrud #btnVoltar{
     display: inline-block;
     background-color: deepskyblue;
     border: 1px solid blue;
@@ -14,7 +14,7 @@
     text-decoration: none;
 }
 
-#cabecalhoCrud a:hover{
+#cabecalhoCrud #btnVoltar{
     background: dodgerblue;
     color: blue;
 }
@@ -52,4 +52,26 @@ table tr:nth-child(odd) td{
 table tbody tr td{
     padding-left: 15px;
     color: black;
+}
+
+table tbody tr td a{
+    text-decoration: none;
+}
+
+.editar{
+    color: lime;
+}
+
+.editar:hover{
+    color: white;
+    background: lime;
+}
+
+.excluir{
+    color: red;
+}
+
+.excluir:hover{
+    color: white;
+    background: red;
 }
