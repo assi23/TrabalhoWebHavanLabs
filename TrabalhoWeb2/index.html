@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <button id="btn1" onclick="alertaNaTela();">Click e veja a mágica</button> <br><br>
+    <label for="nmr1">Valor 1:</label> <input type="number" name="nmr1" id="n1">
+    <label for="nmr2">Valor 2:</label> <input type="number" name="nmr2" id="n2">
+    <button id="btn2" onclick="somar();">Somar</button> 
+    <p id="exibiSoma"></p>
+    <button id="btn3" onclick="add();">Adicionar um link novo</button> <br><br>
+    <button id="btn4" onclick="alterarCor();">Pintar</button> <br><br>
+    <button id="btn5" onclick="addBorda();">Borda</button> <br><br>
+    <br><br>
+    <div  style="width: 50%; height: 200px;" id="bloco">
+    </div>
+    <script>
+        let bloco = document.getElementById('bloco')
+        var cor = true;
+        nomeNaTela();
+
+        function nomeNaTela(){
+            // let nome = document.getElementById('nome');
+            // nome.innerHTML = "Mestre dos Magos";
+            console.log('Mestre dos Magos');
+        }
+
+        function alertaNaTela(){
+            alert('Magic!!');
+        }
+
+        function somar(){
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let exibir = document.getElementById('exibiSoma');
+            soma = parseInt(n1) + parseInt(n2);
+            console.log(`A soma dos valores ${n1} + ${n2} é: ${soma}`);
+            exibir.innerHTML = `A soma dos valores ${n1} + ${n2} é: ${soma}`;
+        }
+
+        function add(){
+            bloco.innerHTML = "<a href='https://havanlabs.gupy.io/' target='_blank'>Clique aqui para ir para o site da Havan Labs</a>"
+        }
+
+        function alterarCor(){
+            if(cor){
+                bloco.style.backgroundColor = "deepskyblue";
+                cor = false;
+
+            }
+            else{
+                bloco.style.backgroundColor = "blue";
+                cor = true;
+            }
+        }
+
+        function addBorda(){
+            bloco.style.border = "10px double #000266";
+        }
+    </script>
+</body>
+</html>
