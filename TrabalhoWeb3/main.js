@@ -3,14 +3,15 @@ var bandas = [
                 {"id":1,"nome":"Black Sabbath","gen":"Rock","pais":"EUA"},
                 {"id":2,"nome":"Iron Maiden","gen":"Rock","pais":"EUA"}
             ]
+var id = 3;
 
 function cadastrar(){
-    let id = parseInt(document.getElementById("id").value);
     let nome = document.getElementById("nome").value;
     let gen = document.getElementById("gen").value;
     let pais = document.getElementById("pais").value;
     bandaCadastradas = {"id":id,"nome":nome,"gen":gen,"pais":pais};
     bandas.push(bandaCadastradas);
+    id++;
     carregaTabela();
     limpar(); 
 }
@@ -24,7 +25,6 @@ function carregaTabela(){
 }
 
 function limpar(){
-    document.getElementById("id").value ='';
     document.getElementById("nome").value ='';
     document.getElementById("gen").value ='';
     document.getElementById("pais").value ='';
