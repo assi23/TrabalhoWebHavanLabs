@@ -65,18 +65,22 @@ header{
 #barraNavegacao ul li{
     display: inline-block;
     padding: 5px;
-    background: #fff;
-    border: 2px solid darkblue;
+    background:darkblue;
+    border-radius: 5px;
 }
 
 #barraNavegacao ul li:hover{
-    border: 2px solid darkblue;
-    background: cyan;
+    background: white;
 }
 
 #barraNavegacao ul li a{
     display: block;
     text-decoration: none;
     text-transform: capitalize;
+    color: white;
+    padding: 7px;
+}
+
+#barraNavegacao ul li a:hover{
     color: darkblue;
 }
