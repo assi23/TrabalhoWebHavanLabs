@@ -9,6 +9,7 @@
 <body>
     <div id="cabecalho">
         <h1> Cadastro de Bandas</h1>
+        <button><a href="./listagem.html">Listagem</a></button> <br><br>
     </div>
     <div id="form">
         <!-- <label for="id">Id:</label><input type="number" name="id" id="id">      <br><br> -->
@@ -20,22 +21,11 @@
         <button onclick="cadastrar()">Cadastrar</button>
     </div>
     <br>
-    <div id="tabela">
-        <table>
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Nome</th>
-                    <th>Gênero</th>
-                    <th>País</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-    </div>
-
     <script src="main.js"></script>
+    <script>
+        window.onload = function(){
+            carregaStorage();
+        }
+    </script>
 </body>
 </html>
