@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="https://www.pngkey.com/png/full/290-2903670_logo-boteco-aniversario-png-vem-pro-boteco.png" type="image/x-icon">
+    <title>Bar do Zé</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Bar do Zé</h1>
+        </nav>
+    </header>
+    <main>
+        <div id="conteudo">
+            <h3>Cervejas</h3>
+
+        </div>
+    </main>
+    <div id="barraLateral">
+        <a id="cad"  onclick="alterar(1);">Cadastrar</a>
+        <a id="list"  onclick="alterar(2);" >Listar</a>
+        <a id="video"  onclick="alterar(3);">Vídeo</a>
+    </div>
+    <footer>
+        <h4>Todos os direitos reservados <br /> &copy; Havan Labs</h4> 
+    </footer>
+
+    <script>
+        function alterar(vlr){
+            cont = document.getElementById("conteudo");
+            cad = document.getElementById("cad").value;
+            list = document.getElementById("list").value;
+            video = document.getElementById("video").value;
+            
+            if (vlr == 1){
+                cont.innerHTML = '';
+                cont.innerHTML = "<h3>Cadastrar</h3>";
+            }
+            if (vlr == 2){
+                cont.innerHTML = '';
+                list.innerHTML = "<h3>Listar</h3>";
+            }
+           if(vlr == 3){
+                cont.innerHTML = '';
+                video.innerHTML = "<h3>Vídeo</h3>";
+            }
+        }
+    </script>
+</body>
+</html>
