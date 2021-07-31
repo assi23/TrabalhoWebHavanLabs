@@ -24,6 +24,10 @@ main h3{
     text-decoration: underline;
 }
 
+#video{
+    margin: 50px 20%;
+}
+
 #barraLateral{
     display: block;
     justify-content: space-between;

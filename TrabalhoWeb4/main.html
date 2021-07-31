@@ -17,39 +17,21 @@
     </header>
     <main>
         <div id="conteudo">
-            <h3>Cervejas</h3>
-
+            <h3>Nosso Espaço</h3>
+            <div id="conteudo2">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/4kS9X5v1a8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </main>
     <div id="barraLateral">
         <a id="cad"  onclick="alterar(1);">Cadastrar</a>
-        <a id="list"  onclick="alterar(2);" >Listar</a>
-        <a id="video"  onclick="alterar(3);">Vídeo</a>
+        <a id="list"  onclick="alterar();" >Listar</a>
+        <a id="video"  href="main.html">Vídeo</a>
     </div>
     <footer>
         <h4>Todos os direitos reservados <br /> &copy; Havan Labs</h4> 
     </footer>
 
-    <script>
-        function alterar(vlr){
-            cont = document.getElementById("conteudo");
-            cad = document.getElementById("cad").value;
-            list = document.getElementById("list").value;
-            video = document.getElementById("video").value;
-            
-            if (vlr == 1){
-                cont.innerHTML = '';
-                cont.innerHTML = "<h3>Cadastrar</h3>";
-            }
-            if (vlr == 2){
-                cont.innerHTML = '';
-                list.innerHTML = "<h3>Listar</h3>";
-            }
-           if(vlr == 3){
-                cont.innerHTML = '';
-                video.innerHTML = "<h3>Vídeo</h3>";
-            }
-        }
-    </script>
+   <script src="./js/main.js"></script>
 </body>
 </html>
