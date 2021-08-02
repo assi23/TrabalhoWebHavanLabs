@@ -64,6 +64,7 @@ function carregaStorage(){
     let listaCervejaJson = localStorage.getItem("listaCerveja");
 
     if(listaCervejaJson != null){
+        //transforma a lista em tipo dicionário
         listaCerveja = JSON.parse(listaCervejaJson);
     }
 }
