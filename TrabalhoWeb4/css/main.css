@@ -10,6 +10,8 @@ body{
 main{
     background-color: #fff;
     background-image: url("https://a-static.mlcdn.com.br/618x463/tapete-em-lona-madeira-escura-fabrika-de-festa/fabrikadefesta/552576494/d5eaa0dfc8a18494a5fce2b49bdc6d8f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     width:50%;
     min-height: 400px;
@@ -25,7 +27,7 @@ main h3{
 }
 
 #video{
-    margin: 50px 20%;
+    margin: 50px 10%;
 }
 
 #barraLateral{

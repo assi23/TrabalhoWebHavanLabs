@@ -14,10 +14,14 @@
 }
 
 #form label{
+    border-radius: 25px;
+    color: white;
     font-weight: bold;
 }
 
 #form input{
-    text-align: right;
+    border: 2px solid #333;
+    border-radius: 25px;
+    height: 16%;;
     width: 100%;
 }

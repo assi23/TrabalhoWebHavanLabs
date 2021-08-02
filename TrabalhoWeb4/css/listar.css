@@ -18,6 +18,7 @@ table thead tr th{
 }
 table tbody tr{
     height: 40px;
+    background-color:#ccc ;
 }
 
 /* adiciona linhas de cores diferentes */

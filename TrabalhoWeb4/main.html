@@ -17,15 +17,15 @@
     </header>
     <main>
         <div id="conteudo">
-            <h3>Nosso Espaço</h3>
+            <h3 id="h3">Nosso Espaço</h3>
             <div id="conteudo2">
                 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/4kS9X5v1a8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </main>
     <div id="barraLateral">
-        <a id="cad"  onclick="alterar(1);">Cadastrar</a>
-        <a id="list"  onclick="alterar();" >Listar</a>
+        <a id="cad"  onclick="alterar(1);carregarCadastro();">Cadastrar</a>
+        <a id="list"  onclick="alterar();carregarLista();" >Listar</a>
         <a id="video"  href="main.html">Vídeo</a>
     </div>
     <footer>
@@ -33,5 +33,6 @@
     </footer>
 
    <script src="./js/main.js"></script>
+
 </body>
 </html>
