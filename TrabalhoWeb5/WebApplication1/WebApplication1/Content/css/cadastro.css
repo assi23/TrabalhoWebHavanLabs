@@ -1,4 +1,4 @@
-﻿#cadastro {
+﻿.cadastro {
 	justify-content: center;
 	width: 100%;
 	height: 100%;
@@ -6,18 +6,18 @@
 	display: flex;
 }
 
-#form {
+.form {
 	width: 80%;
 	margin-top: 10%;
 }
 
-	#form label {
+	.form label {
 		border-radius: 25px;
 		color: white;
 		font-weight: bold;
 	}
 
-	#form input {
+	.form input {
 		border: 2px solid #333;
 		border-radius: 25px;
 		height: 16%;

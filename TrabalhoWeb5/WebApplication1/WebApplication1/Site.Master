@@ -4,35 +4,40 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="Content/css/home.css" rel="stylesheet" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="Content/css/home.css" rel="stylesheet" />
 	<link href="Content/css/header.css" rel="stylesheet" />
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+	<title></title>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Bar do Zé</h1>
-        </nav>
-    </header>
-   
-    <div id="barraLateral">
-        <a id="cad"  href="Cadastro.aspx">Cadastrar</a>
-        <a id="list"   href="Listar.aspx" >Listar</a>
-        <a id="video"  href="Default.aspx">Vídeo</a>
-    </div>
+	<header>
+		<nav>
+			<h1>Bar do Zé</h1>
+		</nav>
+	</header>
 
-    <form id="form1" runat="server">
-        <div id="cadastro">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+	<div id="barraLateral">
+		<a id="cad" href="Cadastro.aspx">Cadastrar</a>
+		<a id="list" href="Listar.aspx">Listar</a>
+		<a id="video" href="Default.aspx">Vídeo</a>
+	</div>
 
-            </asp:ContentPlaceHolder>
-        </div>
-          <footer>
-        <h4>Todos os direitos reservados <br /> &copy; Havan Labs</h4> 
-    </footer>
-    </form>
+	<main>
+		<form id="form1" runat="server">
+			<div id="conteudo2">
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+					<h3 id="h3">Nosso Espaço</h3>
+					<iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/4kS9X5v1a8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</asp:ContentPlaceHolder>
+			</div>
+		</form>
+	</main>
+	<footer>
+		<h4>Todos os direitos reservados
+			<br />
+			&copy; Havan Labs</h4>
+	</footer>
 </body>
 </html>

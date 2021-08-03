@@ -5,17 +5,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	<div id="listagem">
-		<table>
-			<thead>
-				<th>Marca:</th>
-				<th>Tipo:</th>
-				<th>Distribuidora:</th>
-			</thead>
-			<tbody>
-				<tr>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+	<h3 id="h3">Lista Cerveja</h3>
+	<asp:GridView ID="dgvCerveja" runat="server" CssClass="tabela"></asp:GridView>
 </asp:Content>

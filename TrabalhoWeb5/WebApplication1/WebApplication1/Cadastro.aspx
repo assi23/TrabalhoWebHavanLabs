@@ -7,11 +7,16 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 	<div id="cadastro">
-        <div id="form">
-            <label for="marca">Marca:</label> <input type="text" name="marca" id="marca"> <br><br>
-            <label for="Tipo">Tipo:</label> <input type="text" name="tipo" id="tipo">     <br><br>
-            <label for="distri">Distribuidora:</label> <input type="text" name="distri" id="distri"> <br><br> 
-            <button onclick="salvar();">Cadastrar</button>
-        </div>
-    </div>
+		<div id="form" cssclass="cadastro">
+			<h3 id="h3">Cadastro Cerveja</h3>
+			<label for="tbMarca">Marca:</label>
+			<asp:TextBox ID="tbMarca" runat="server"></asp:TextBox>
+			<label for="tbTipo">Tipo:</label>
+			<asp:TextBox ID="tbTipo" runat="server"></asp:TextBox>
+			<label for="tbDistri">Distribuidora:</label>
+			<asp:TextBox ID="tbDistri" runat="server"></asp:TextBox>
+			<asp:Button ID="btnSalvar" runat="server" Text="Button" OnClick="btnSalvar_Click" />
+			<asp:Label ID="lbMessage" runat="server" Text=""></asp:Label>
+		</div>
+	</div>
 </asp:Content>
