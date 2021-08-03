@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Content/css/home.css" rel="stylesheet" />
+	<link href="Content/css/header.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Bar do Zé</h1>
+        </nav>
+    </header>
+   
+    <div id="barraLateral">
+        <a id="cad"  href="Cadastro.aspx">Cadastrar</a>
+        <a id="list"   href="Listar.aspx" >Listar</a>
+        <a id="video"  href="Default.aspx">Vídeo</a>
+    </div>
+
+    <form id="form1" runat="server">
+        <div id="cadastro">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+          <footer>
+        <h4>Todos os direitos reservados <br /> &copy; Havan Labs</h4> 
+    </footer>
+    </form>
+</body>
+</html>
